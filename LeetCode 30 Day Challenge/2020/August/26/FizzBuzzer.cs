@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Text;
 
-namespace LeetCode_30_Day_Challenge
+namespace LeetCode_30_Day_Challenge._2020.August._26
 {
-    class Program
+    // https://leetcode.com/explore/challenge/card/august-leetcoding-challenge/552/week-4-august-22nd-august-28th/3437/
+    // Accepted
+    // Better solution available by using string concatenation
+    class FizzBuzzer
     {
-        static void Main(string[] args)
+        static void FizzBuzzerMain(string[] args)
         {
             var list = FizzBuzz(15);
             Console.ReadKey();
@@ -16,7 +19,7 @@ namespace LeetCode_30_Day_Challenge
         public static IList<string> FizzBuzz(int n)
         {
             IList<string> fizzBuzzes = new List<string>();
-            for(int i = 1; i<=n;i++)
+            for (int i = 1; i <= n; i++)
             {
                 if (i % 15 == 0)
                     fizzBuzzes.Add("FizzBuzz");
@@ -29,7 +32,7 @@ namespace LeetCode_30_Day_Challenge
                 else
                     fizzBuzzes.Add(i.ToString());
 
-                
+
             }
             return fizzBuzzes;
         }
